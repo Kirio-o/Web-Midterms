@@ -10,8 +10,11 @@ Landing Pages is consist of Projects and Contact Us.
 Note: Projects not working for future purpose!!
 
 To access Login Page click on Contact Us.
+
 This uses static data so use credentials, email = example@gmail.com password = password123
+
 To access Sign Up Page click on Sign up on Login Page.
+
 This will bring you back to login page.
 
 In development so some buttons is not working, this is just for Midterms Exam.
