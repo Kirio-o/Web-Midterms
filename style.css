@@ -5,7 +5,7 @@
     font-family: 'Product Sans', sans-serif;
 }
 #welcome{
-    background-image: url('/img/body-bg.png') ;
+    background-image: url('body-bg.png') ;
     padding-top: 150px;
 }
 #welcome h1{
