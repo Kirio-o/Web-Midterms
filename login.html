@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Login</title> 
+    <link rel="stylesheet" href="/css/loginstyle.css">
+    <script src="https://kit.fontawesome.com/542cb8b844.js"></script>
+    
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            const expectedEmail = "example@gmail.com";
+            const expectedPassword = "password123";
+            const email = document.getElementById("emailInput").value;
+            const password = document.getElementById("passwordInput").value;
+
+            if (email === expectedEmail && password === expectedPassword) {
+                window.location.href = "index.html"; 
+            } else {
+                alert("Invalid email or password. Please try again.");
+            }
+        }
+    </script>
+   </head>
+
+<body>
+  <div class="container">
+    <div class="login form">
+      <header>Login</header>
+      <form onsubmit="validateForm(event)">
+        <i id="emailicon" class="fa-solid fa-envelope"></i>
+        <i class="fas fa-lock"></i>
+        
+        <label for="email"></label>
+        <input type="email" name="email" id="emailInput" placeholder="Enter your email" autocomplete="email" required>
+
+        <label for="password"></label>
+        <input type="password" name="password" id="passwordInput" placeholder="Enter your password" required>
+
+        <a href="#">Forgot Password?</a>
+        <input id="loginButton" type="submit" class="button" value="Login">
+      </form>
+
+      <div class="signup">
+        <span class="signup">Don't have an account?</span>
+        <label for="check"></label>
+        <a id="check" href="signup.html">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
